@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Card</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 16px;
+            max-width: 300px;
+            font-family: sans-serif;
+            border-radius: 8px;
+        }
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+	.old-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 0.9em;
+            margin-right: 5px;
+        }
+        .discount-badge {
+            color: red;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Item Image" width="100%">
+        <h2>Coffee Mug</h2>
+        <p>
+            <span class="old-price">$16.00</span>
+            <span class="price">$12.99</span>
+            <span class="discount-badge">(20% OFF)</span>
+        </p>
+        <p>A simple ceramic coffee mug for your daily brew.</p>
+        <button>Buy Now</button>
+    </div>
+
+</body>
+</html>
