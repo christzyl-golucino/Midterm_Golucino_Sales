@@ -14,7 +14,7 @@
             color: green;
             font-weight: bold;
         }
-	.old-price {
+        .old-price {
             text-decoration: line-through;
             color: #888;
             font-size: 0.9em;
@@ -32,6 +32,31 @@
             padding: 8px 12px;
             border-radius: 4px;
             cursor: pointer;
+            width: 100%;
+        }
+        
+        /* Feedback Form Styling */
+        .feedback-form {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+        .feedback-form h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .feedback-form select, 
+        .feedback-form textarea {
+            width: 100%;
+            margin-bottom: 8px;
+            padding: 6px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .feedback-form button {
+            background-color: #555;
         }
     </style>
 </head>
@@ -47,6 +72,25 @@
         </p>
         <p>A simple ceramic coffee mug for your daily brew.</p>
         <button>Buy Now</button>
+        <button type="button">Buy Now</button>
+
+        <!-- Feedback Form Section -->
+        <form class="feedback-form">
+            <h3>Leave Feedback</h3>
+            
+            <select required>
+                <option value="">Rate this item...</option>
+                <option value="5">⭐⭐⭐⭐⭐ (5/5)</option>
+                <option value="4">⭐⭐⭐⭐ (4/5)</option>
+                <option value="3">⭐⭐⭐ (3/5)</option>
+                <option value="2">⭐⭐ (2/5)</option>
+                <option value="1">⭐ (1/5)</option>
+            </select>
+
+            <textarea rows="2" placeholder="Write a brief review..." required></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
     </div>
 
 </body>
